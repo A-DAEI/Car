@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Car</title>
+  <style>
+    @media (max-width: 1200px) {
+  .main img {
+    width: 250px;
+  }
+  
+  .spans {
+    font-size: 1.4rem;
+    right: 15%;
+  }
+  
+  .text {
+    font-size: 2rem;
+    width: 45%;
+  }
+  
+  .choice {
+    font-size: 1.1rem;
+  }
+  
+  .explore {
+    font-size: 1.6rem;
+  }
+}
+/* Previous styles remain the same until the media queries */
+
+/* New 900px media query */
+@media (max-width: 900px) {
+  .main {
+    background-position: 70% center;
+  }
+  
+  .main img {
+    width: 220px;
+    left: 3%;
+    top: 4%;
+  }
+  
+  .spans {
+    font-size: 1.3rem;
+    right: 7%;
+    top: 6%;
+  }
+  
+  .spans span {
+    margin-inline: 2%;
+  }
+  
+  .text {
+    font-size: 1.8rem;
+    width: 50%;
+    top: 28%;
+  }
+  
+  .choice {
+    font-size: 1.1rem;
+    top: 47%;
+    padding: 3% 6%;
+  }
+  
+  .explore {
+    font-size: 2rem;
+    bottom: 6%;
+    padding: 4% 8%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    background-position: 60% center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+  }
+  
+  .main img {
+    width: 180px;
+    position: static;
+    margin-bottom: 15px;
+  }
+  
+  .spans {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    align-items: center;
+  }
+  
+  .text {
+    position: static;
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    position: static;
+    font-size: 1rem;
+  }
+  
+  .explore {
+    position: static;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .main img {
+    width: 120px;
+  }
+  
+  .spans {
+    font-size: 0.9rem;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .text {
+    font-size: 1.1rem;
+  }
+  
+  .choice, .explore {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+  
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choice {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    background-position: 60% center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .main img {
+    width: 280px;
+    position: static;
+    margin-bottom: 15px;
+  }
+  
+  .spans {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  
+  .text {
+    position: static;
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    position: static;
+    margin-bottom: 80px;
+    font-size: 1rem;
+  }
+  .choice:hover{
+    padding: 3% 6%;
+  }
+  
+  .explore {
+    position: static;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .main img {
+    width: 140px;
+    margin-bottom: 30px;
+  }
+  
+  .spans {
+    font-size: 1rem;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+  }
+  
+  .choice {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+  .explore {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 40px;
+  }
+  
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choice {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="whole">
+    <div class="main">
+        <img src="adaei.png">
+        <div class="spans">
+            <span>Platform</span>
+            <span>Solutions</span>
+            <span>About us</span>
+        </div>
+        <div class="text">
+            Choose your favorite then you will recieve it.
+        </div>
+        <button class="choice">
+            Make your choice here
+        </button>
+        <button class="explore">EXPLORE</button>
+    </div>
+  </div>
+</body>
+</html>
